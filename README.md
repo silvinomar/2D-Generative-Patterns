@@ -1,9 +1,9 @@
 # GenerativePatterns
 
->>> generative patterns made with p5js or processing \n
->>> the canvas is always 600x600px \n
->>> everytime the sketch runs it should generate a slightly different pattern \n\n
+\>> generative patterns made with p5js or processing<br/>
+\>> the canvas is always 600x600px<br/>
+\>> everytime the sketch runs it should generate a slightly different pattern<br/><br/>
 
->>> a screenshot of a pattern and its source code is shared everyday via Twitter @ociosoadias \n\n
+\>> a screenshot of a pattern and its source code is shared everyday via Twitter @ociosoadias<br/><br/>
 
->>> you're free to download and remix every sketch
+\>> you're free to download and remix every sketch
