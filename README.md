@@ -1,4 +1,4 @@
-# GenerativeGrayscalePatterns
+# GenerativePatterns
 
 \>> generative patterns made with p5js or processing<br/>
 \>> the canvas is always 600x600px<br/>
