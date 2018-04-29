@@ -1,6 +1,6 @@
 # GenerativePatterns
 
-<p>>> generative patterns made with p5js or processing</p>
+<p>>> generative patterns made with <a href="https://p5js.org/" target="_blank"> p5js</a></p>
 <p>>> the canvas is always 600x600px</p>
 <p>>> everytime the sketch runs it should generate a slightly different pattern<p/>
 <p>>> in some sketches, it's possible to generate a new pattern by clicking with the mouse</p><br/>
@@ -12,14 +12,14 @@
 
 <h2>Screenshots:</h2>
 
-<h3>pgrid01</h3>
+<a href="https://github.com/mrsilvino/GenerativePatterns/tree/master/pgrid01" target="_blank"><h3>pgrid01</h3></a>
 <img src="https://pbs.twimg.com/media/Dbs-LGTWkAAQpMr.jpg">
 
-<h3>pgrid02</h3>
+<a href="https://github.com/mrsilvino/GenerativePatterns/tree/master/pgrid02" target="_blank"><h3>pgrid02</h3></a>
 <img src="https://pbs.twimg.com/media/DbyPqLbWAAAPABx.jpg">
 
-<h3>pgrid03</h3>
+<a href="https://github.com/mrsilvino/GenerativePatterns/tree/master/pgrid03" target="_blank"><h3>pgrid03</h3></a>
 <img src="https://pbs.twimg.com/media/Db3cKg5W4AAeP8b.jpg">
 
-<h3>pgrid04</h3>
+<a href="https://github.com/mrsilvino/GenerativePatterns/tree/master/pgrid04" target="_blank"><h3>pgrid04</h3></a>
 <img src="https://pbs.twimg.com/media/Db8PadoX0AAwHLg.jpg">
