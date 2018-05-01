@@ -12,7 +12,7 @@ function setup() {
 }
 
 function mousePressed() {
-    grid(CELLW,CELLH);
+    grid(CELLW, CELLH);
 }
 
 function grid(cellW, cellH) {

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
   body {
       margin: 0;
       background-color: black;
@@ -6,4 +7,14 @@
   canvas {
       margin: auto;
       display: block;
+=======
+  body {
+      margin: 0;
+      background-color: black;
+  }
+
+  canvas {
+      margin: auto;
+      display: block;
+>>>>>>> 34fd8619bdf7148ea49a3f6dd1a1364a9c19cb7f
   }

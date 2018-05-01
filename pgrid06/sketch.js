@@ -28,7 +28,7 @@ function mousePressed() {
 function drawGrid() {
     clear();
     background(0);
-    translate(spacing/2, spacing/2);
+    translate(spacing / 2, spacing / 2);
     for (var x = 0; x < width; x += spacing) {
         for (var y = 0; y < height; y += spacing) {
             var size = spacing;
@@ -43,7 +43,7 @@ function recursiveRect(px, py, size) {
         var randomIndex = rand(colors.length);
         fill(colors[randomIndex]);
         rect(px, py, size, size);
-        size -=1;
+        size -= 1;
     }
 
 }

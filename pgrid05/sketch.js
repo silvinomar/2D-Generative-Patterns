@@ -8,14 +8,14 @@ var spacing = 50;
 
 function setup() {
 
- 
+
     yellowBg = color("#fec715");
 
     colors[0] = color("#395dab");
     colors[1] = color("#162951");
     colors[2] = color("#ee222e");
     colors[3] = color("fff");
-    
+
 
 
     createCanvas(w, h);
@@ -46,5 +46,4 @@ function drawGrid() {
             rect(x, y, size, size);
         }
     }
-
 }

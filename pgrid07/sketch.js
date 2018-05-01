@@ -44,5 +44,4 @@ function recursiveRect(px, py, size) {
         rect(px, py, size, size);
         size -= noiseVal * randomVal;
     }
-
 }
