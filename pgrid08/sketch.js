@@ -1,4 +1,3 @@
-<< << << < HEAD
 var w = 600,
     h = 600;
 
@@ -29,8 +28,6 @@ function drawGrid() {
                 rect(x, y, spacing * 1 / sqrt(i), spacing * 1 / sqrt(i));
 
             }
-
-
         }
     }
 }
