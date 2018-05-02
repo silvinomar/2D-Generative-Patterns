@@ -11,10 +11,3 @@
       left: 50%;
       transform: translate(-50%,-50%);
   }
-
-h1::after{
-    content: attr(title);
-    display: block;
-    text-align: center;
-    color: white;
-}
