@@ -1,20 +1,20 @@
-<<<<<<< HEAD
   body {
       margin: 0;
       background-color: black;
+      min-height: 100vh;
   }
 
   canvas {
       margin: auto;
-      display: block;
-=======
-  body {
-      margin: 0;
-      background-color: black;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
   }
 
-  canvas {
-      margin: auto;
-      display: block;
->>>>>>> 34fd8619bdf7148ea49a3f6dd1a1364a9c19cb7f
-  }
+h1::after{
+    content: attr(title);
+    display: block;
+    text-align: center;
+    color: white;
+}
