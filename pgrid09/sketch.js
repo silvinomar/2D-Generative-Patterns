@@ -27,8 +27,8 @@ function reset() {
 
 function grid() {
     var dir = random(.75, 1.75);
-    for (var x = -spacing * 2; x < width + spacing; x += spacing * 0.9) {
-        for (var y = -spacing * 2; y < height + spacing; y += spacing * 0.9) {
+    for (var x = spacing ; x < width ; x += spacing * 2) {
+        for (var y = spacing ; y < height ; y += spacing * 2) {
             var change = map(x * y, 0, width * height, 0, 1);
             strokeWeight(map(change, 0, 1, .9, 2.5));
             stroke(map(change, 0, 1, 215, 255));
