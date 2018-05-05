@@ -1,11 +1,12 @@
 var w = 600,
     h = 600;
 
+const colors = ["#ed008c", "#3a3093", "#ffde17", "#f7941d"];
 
 function setup() {
     createCanvas(w, h);
     stroke(255);
-    strokeWeight(2);
+    strokeWeight(3);
     init();
 }
 
@@ -35,6 +36,7 @@ function horizontalLines(xspacing, yspacing) {
     while (y < (height - yspacing)) {
         beginShape();
         for (var x = 0; x < width + xspacing; x += xspacing) {
+            stroke(colors[randomIndex(colors.length,noise(x*y))]);
             if (noise(x) > 0.5) {
                 vertex(x, y + v * 10);
             } else {
@@ -42,7 +44,6 @@ function horizontalLines(xspacing, yspacing) {
             }
         }
         endShape();
-        stroke(noise(y) * 255, random(noise(y)) * 255, random(noise(y)) * 255);
 
         y += yspacing;
     }
@@ -52,4 +53,8 @@ function horizontalLines(xspacing, yspacing) {
 function variation(y) {
     return map(random(noise(y)), 0, 1, 0, 8);
 
+}
+
+function randomIndex(max,noise){
+    return Math.round(Math.random()*(max-1));
 }
