@@ -40,7 +40,7 @@
 <img src="https://pbs.twimg.com/media/DcWPwFaXkAIXplz.jpg">
 
 <a href="https://github.com/mrsilvino/GenerativePatterns/tree/master/pgrid10" target="_blank"><h3>pgrid10</h3></a>
-<img src="https://pbs.twimg.com/media/DccFhxiXUAYTKn4.jpg
+<img src="https://pbs.twimg.com/media/DccFhxiXUAYTKn4.jpg">
 
 <a href="https://github.com/mrsilvino/GenerativePatterns/tree/master/pgrid11" target="_blank"><h3>pgrid11</h3></a>
 <img src="https://pbs.twimg.com/media/DciP2XfXcAIq2WC.jpg">
