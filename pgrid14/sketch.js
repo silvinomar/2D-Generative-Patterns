@@ -16,8 +16,8 @@ function setup() {
 
 function init() {
     count = 0;
-    background(2, 0, 66);
-    
+    background(255);
+
     pInstance = new pattern(20);
 
     for (var x = 0; x < w + (spacing / 2); x += spacing) {
@@ -43,24 +43,22 @@ function pattern(spacing) {
     }
 
     this.displayDiamond = function (b) {
-        fill(color("#FFD819"));
+        fill(color("#222"));
         if (b) {
             ellipse(this.position.x, this.position.y, this.size.x, this.size.y);
-            //triangle(this.position.x - this.size.x, this.position.y - this.size.y / 2, this.position.x - this.size.x, this.position.y + this.size.y / 2, this.position.x, this.position.y);
-            //triangle(this.position.x + this.size.x, this.position.y - this.size.y / 2, this.position.x + this.size.x, this.position.y + this.size.y / 2, this.position.x, this.position.y);
         } else {
             triangle(this.position.x - this.size.x, this.position.y - this.size.y / 2, this.position.x + this.size.x, this.position.y - this.size.y / 2, this.position.x, this.position.y);
             triangle(this.position.x - this.size.x, this.position.y + this.size.y / 2, this.position.x + this.size.x, this.position.y + this.size.y / 2, this.position.x, this.position.y);
         }
     }
-    
-    this.add = function(){
+
+    this.add = function () {
         init();
-        this.position.x += 0.01 * RoundRandom(-1,1);
-        this.position.y += 0.01 * RoundRandom(-1,1);
+        this.position.x += 0.01 * RoundRandom(-1, 1);
+        this.position.y += 0.01 * RoundRandom(-1, 1);
     }
-    
-    this.display = function(){
+
+    this.display = function () {
         var b = Math.random() > 0.25;
         this.displayDiamond(b);
     }
