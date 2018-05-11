@@ -6,7 +6,9 @@ var r;
 var units = [];
 
 
-var gridUnit = 80;
+var gridUnit = 60;
+
+var count = 0;
 
 function setup() {
 
@@ -14,9 +16,8 @@ function setup() {
     background(0);
     noStroke();
     noFill();
-    stroke(255);
-    strokeWeight(0.95);
-    //blendMode(DIFFERENCE);
+    stroke(255,174);
+    strokeWeight(.85);
 }
 
 function draw() {
@@ -26,7 +27,16 @@ function draw() {
 function grid() {
     for (var x = gridUnit; x <= width - (gridUnit); x += gridUnit) {
         for (var y = gridUnit; y <= height - (gridUnit); y += gridUnit) {
-            units.push(new motionCircle(createVector(x, y), 18, 1));
+            var xindex = (x / gridUnit) - 1;
+            var yindex = (y / gridUnit) - 1;
+            count = xindex + yindex;
+
+            if (count % 2 == 0) {
+                units.push(new motionCircle(createVector(x, y), 15, random()*50));
+            } else {
+                units.push(new motionCircle(createVector(x, y), 25, random()*50));
+            }
+
         }
     }
 
@@ -40,16 +50,16 @@ function grid() {
 function motionCircle(p, r, offset) {
     this.r = r;
     this.theta = 0;
-    this.thetaVel = 1;
-    this.thetaAcc = .0001;
+    this.thetaVel =1;
+    this.thetaAcc = 2;
     this.pos = p;
     this.p = createVector(0);
 
-    this.size = 12;
+    this.size = r;
 
     this.update = function () {
 
-        if (this.theta < TWO_PI * 0.95) {
+        if (this.theta < TWO_PI) {
             // Convert polar to cartesian
             var x = this.r * cos(this.theta);
             var y = this.r * sin(this.theta);
@@ -81,7 +91,7 @@ function recursiveEllipse(p, s) {
     var size = s;
     if (size > 0) {
         ellipse(p.x, p.y, size * 2, size * 2);
-        size -= 4;
+        size -= 10;
         recursiveEllipse(p, size);
     }
 
