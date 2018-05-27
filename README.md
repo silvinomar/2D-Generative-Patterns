@@ -86,3 +86,6 @@
 
 <a href="https://github.com/mrsilvino/GenerativePatterns/tree/master/pgrid25" target="_blank"><h3>pgrid25</h3></a>
 <img src="https://pbs.twimg.com/media/DeDZFuUXcAAXpNL.jpg">
+
+<a href="https://github.com/mrsilvino/GenerativePatterns/tree/master/pgrid26" target="_blank"><h3>pgrid26</h3></a>
+<img src="https://pbs.twimg.com/media/DeN0CN1XUAEPczG.jpg">
